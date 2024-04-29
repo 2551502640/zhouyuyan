@@ -1,5 +1,6 @@
 package com.hixtrip.sample.domain.order;
 
+import com.hixtrip.sample.client.order.dto.CommandOderCreateDTO;
 import com.hixtrip.sample.domain.order.model.Order;
 import com.hixtrip.sample.domain.pay.model.CommandPay;
 import org.springframework.stereotype.Component;
@@ -34,5 +35,9 @@ public class OrderDomainService {
      */
     public void orderPayFail(CommandPay commandPay) {
         //需要你在infra实现, 自行定义出入参
+    }
+
+    public String userLogin(CommandOderCreateDTO commandOderCreateDTO) {
+        return null;
     }
 }
